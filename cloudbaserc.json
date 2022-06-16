@@ -9,8 +9,8 @@
         "use": "@cloudbase/framework-plugin-node",
         "inputs": {
           "entry": "server/index.mjs",
-          "name": "next-default",
-          "path": "/next-app"
+          "name": "nuxt-default",
+          "path": "/nuxt-app"
         }
       },
       "auth": {
