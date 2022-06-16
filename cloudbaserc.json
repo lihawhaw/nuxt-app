@@ -5,29 +5,12 @@
   "framework": {
     "name": "nuxt-default",
     "plugins": {
-      "client": {
-        "use": "@cloudbase/framework-plugin-nuxt",
-        "inputs": {}
-      },
-      "server": {
-        "use": "@cloudbase/framework-plugin-function",
+      "node": {
+        "use": "@cloudbase/framework-plugin-node",
         "inputs": {
-          "functionRootPath": "cloudfunctions",
-          "functions": [
-            {
-              "name": "nuxt-ssr-echo",
-              "timeout": 5,
-              "envVariables": {},
-              "runtime": "Nodejs12.16",
-              "memory": 256,
-              "aclRule": {
-                "invoke": true
-              }
-            }
-          ],
-          "servicePaths": {
-            "nuxt-ssr-echo": "/nuxt-ssr-echo"
-          }
+          "entry": ".output/server/index.mjs",
+          "name": "next-default",
+          "path": "/next-default"
         }
       },
       "auth": {

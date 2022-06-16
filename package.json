@@ -5,7 +5,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "pnpm:i": "pnpm install --shamefully-hoist"
+    "pnpm:i": "pnpm install --shamefully-hoist",
+    "deploy": "cloudbase framework deploy",
+    "deploy:server": "cloudbase framework deploy node"
   },
   "devDependencies": {
     "nuxt": "3.0.0-rc.4"
