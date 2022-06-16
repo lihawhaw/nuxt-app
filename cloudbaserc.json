@@ -8,9 +8,9 @@
       "node": {
         "use": "@cloudbase/framework-plugin-node",
         "inputs": {
-          "entry": ".output/server/index.mjs",
+          "entry": "server/index.mjs",
           "name": "next-default",
-          "path": "/next-default"
+          "path": "/next-app"
         }
       },
       "auth": {
